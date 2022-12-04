@@ -3,10 +3,11 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Note from "./Components/Note";
 import CreateArea from "./Components/CreateArea";
+import useLocalStorage from "./hooks/useLocalStorage.jsx";
 
 function App() {
   const [area, setArea] = useState({ title: "", note: "" });
-  const [note, setNote] = useState([]);
+  const [note, setNote] = useLocalStorage("notes",[]);
 
   function noteHandler(area) {
     setNote((prevNote) => {
