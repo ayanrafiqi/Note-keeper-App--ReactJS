@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Note from "./Components/Note";
-import CreateArea from "./Components/CreateArea";
+import CreateNote from "./Components/CreateNote";
 import useLocalStorage from "./hooks/useLocalStorage.jsx";
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
   return (
     <div>
       <Header />
-      <CreateArea onAdd={noteHandler} value={area} />
+      <CreateNote onAdd={noteHandler} value={area} />
       {note.map((noteArea, index) => (
         <Note
           key={index}

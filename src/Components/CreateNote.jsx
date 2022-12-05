@@ -3,7 +3,7 @@ import NoteAddIcon from "@mui/icons-material/NoteAdd";
 import Fab from "@mui/material/Fab";
 import Zoom from "@mui/material/Zoom";
 
-function CreateArea(props) {
+function CreateNote(props) {
   const [area, setArea] = useState({ title: "", note: "" });
   const [isExpanded, setisExpanded] = useState(false);
 
@@ -56,4 +56,4 @@ function CreateArea(props) {
   );
 }
 
-export default CreateArea;
+export default CreateNote;
